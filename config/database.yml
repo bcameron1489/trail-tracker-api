@@ -1,4 +1,4 @@
-<% project_name = 'trail-tracker' %>
+<% project_name = 'trail-tracker-api' %>
 
 default: &default
   adapter: postgresql

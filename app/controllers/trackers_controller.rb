@@ -1,4 +1,4 @@
-class TrackersController < ApplicationController
+class TrackersController < ProtectedController
   before_action :set_tracker, only: [:show, :update, :destroy]
 
   # GET /trackers
@@ -15,7 +15,7 @@ class TrackersController < ApplicationController
 
   # POST /trackers
   def create
-    @tracker = Tracker.new(tracker_params)
+    @tracker = current_user.trackers.build(tracker_params)
 
     if @tracker.save
       render json: @tracker, status: :created, location: @tracker
@@ -46,6 +46,6 @@ class TrackersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def tracker_params
-      params.require(:tracker).permit(:completed)
+      params.require(:tracker).permit(:completed, :trail_id)
     end
 end

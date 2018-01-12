@@ -13,3 +13,9 @@ curl "http://localhost:4741/sign-up" \
   }'
 
 echo
+
+
+# EMAIL=B PASSWORD=C PASSWORD_CONFIRMATION=C sh
+
+
+# BAhJIiVmOTExZTdkZjc3ZmJmYjQ5NzlmMzBiZWEwZGU4ZjY4NgY6BkVG--b8a5040692bc4897ea619cab45128514cd253270

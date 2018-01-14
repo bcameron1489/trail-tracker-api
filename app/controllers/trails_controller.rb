@@ -1,4 +1,4 @@
-class TrailsController < ApplicationController
+class TrailsController < ProtectedController
   before_action :set_trail, only: [:show, :update, :destroy]
 
   # GET /trails
@@ -15,7 +15,7 @@ class TrailsController < ApplicationController
 
   # POST /trails
   def create
-    @trail = Trail.new(trail_params)
+    @trail = current_user.trails.build(trail_params)
 
     if @trail.save
       render json: @trail, status: :created, location: @trail

@@ -3,7 +3,7 @@ class TrackersController < ProtectedController
 
   # GET /trackers
   def index
-    @trackers = Tracker.all
+    @trackers = current_user.trackers.all
 
     render json: @trackers
   end

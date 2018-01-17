@@ -1,4 +1,4 @@
-API="${API_ORIGIN:-http://localhost:4741}"
+API="${API_ORIGIN:-https://bcameron1489.github.io/trail-tracker-client}"
 URL_PATH="/trails"
 curl "${API}${URL_PATH}/${ID}" \
   --include \

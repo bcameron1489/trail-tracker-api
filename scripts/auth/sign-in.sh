@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl "http://localhost:4741/sign-in" \
+curl "https://bcameron1489.github.io/trail-tracker-client/sign-in" \
   --include \
   --request POST \
   --header "Content-Type: application/json" \
@@ -12,3 +12,6 @@ curl "http://localhost:4741/sign-in" \
   }'
 
 echo
+
+
+# http://localhost:4741/sign-in

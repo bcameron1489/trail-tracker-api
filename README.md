@@ -50,9 +50,10 @@ Ruby, Rails, SQL, GIT
 
 ### What is this app and how does it work?
 
-I've created a single page application that provides a user access to a database of trails. The app currently allows a user to save a trail, mark it as completed and view the trails cooresponding mountain trail map.
+  I've created a single page application that provides a user access to a database of trails. The app currently allows a user to save a trail, mark it as completed and view the trails cooresponding mountain trail map.
 
-###How does it work? A user must first sign up and sign in before accessing the sites content. Upon sign in, the user is given our list of trails which they can add to their saved list. A user has the ability to add and delete trails to and from their list. Additionally they can update the complete field through a text form. Finally, the user has access to a "trails" view where they're given access to their personal list of trails and can choose to render an HD trail map.
+### How does it work? 
+  A user must first sign up and sign in before accessing the sites content. Upon sign in, the user is given our list of trails which they can add to their saved list. A user has the ability to add and delete trails to and from their list. Additionally they can update the complete field through a text form. Finally, the user has access to a "trails" view where they're given access to their personal list of trails and can choose to render an HD trail map.
 
 The client is built primarily with javascript, jquery and handlebars while using ajax to comunicate with my rails api.
 
@@ -76,4 +77,4 @@ The client is built primarily with javascript, jquery and handlebars while using
 * Debug issues and clean up your code (make sure
 
 ### Unsolved Problems :  
-On the back-end, I had originally planned to write a search filter into the trails model so a user could find a trail easier however, I ran into an issue getting the front end to udate the list dynamically without changing views.  Additionally, the return was not quite what I was looking for (not as accurate as intended).  So I removed the code from the trails model and intend on adding the feature in at a later date.  Furthermore, as the data base grows, ideally I would add a new table called mountains, which would have a relationship with trails giving my site the opportunity to have a whole new dynamic.
+  On the back-end, I had originally planned to write a search filter into the trails model so a user could find a trail easier however, I ran into an issue getting the front end to udate the list dynamically without changing views.  Additionally, the return was not quite what I was looking for (not as accurate as intended).  So I removed the code from the trails model and intend on adding the feature in at a later date.  Furthermore, as the data base grows, ideally I would add a new table called mountains, which would have a relationship with trails giving my site the opportunity to have a whole new dynamic.
